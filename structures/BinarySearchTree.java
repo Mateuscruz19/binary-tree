@@ -3,6 +3,18 @@ package structures;
 public class BinarySearchTree {
     private Node root;
 
+    public Node getRoot() {
+        return root;
+    }
+
+    public Node findNode(String name) {
+        return search(root, name);
+    }
+
+    public void clear() {
+        root = null;
+    }
+
     public void insert(Player p) {
         root = insert(root, p);
     }

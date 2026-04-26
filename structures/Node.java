@@ -21,15 +21,15 @@ public class Node {
         return player;
     }
 
-    public void setLeft(Node left) {
+    void setLeft(Node left) {
         this.left = left;
     }
 
-    public void setRight(Node right) {
+    void setRight(Node right) {
         this.right = right;
     }
 
-    public void setPlayer(Player player) {
+    void setPlayer(Player player) {
         this.player = player;
     }
 }
