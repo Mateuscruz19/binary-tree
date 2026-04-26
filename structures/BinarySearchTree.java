@@ -79,4 +79,17 @@ public class BinarySearchTree {
         return current;
     }
 
+    public void inOrder() {
+        inOrder(root);
+    }
+
+    private void inOrder(Node current) {
+        if (current == null) {
+            return;
+        }
+        inOrder(current.getLeft());
+        Player p = current.getPlayer();
+        System.out.println(p.getRanking() + " - " + p.getNickname());
+        inOrder(current.getRight());
+    }
 }
